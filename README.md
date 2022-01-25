@@ -1,24 +1,36 @@
+[![Odysee Badge](https://img.shields.io/static/v1?label=Odysee&message=Invite&color=purple&style=flat-square&logo=odysee&logoColor=purple)](https://odysee.com/$/invite/@flutterexplained:7)
+[![YouTube Badge](https://img.shields.io/static/v1?label=YouTube&message=Subscribe&color=red&style=flat-square&logo=youtube&logoColor=red)](https://youtube.com/c/flutterexplained?sub_confirmation=1)
+[![Twitch Badge](https://img.shields.io/static/v1?label=Twitch&message=Follow&color=violet&style=flat-square&logo=twitch&logoColor=violet)](https://www.twitch.tv/maxflutter)
+[![Flutter Explained](https://img.shields.io/static/v1?label=Homepage&message=FlutterExplained&color=blue&style=flat-square)](https://flutter-explained.dev/)
+
 # Flutter Explained Testing Tutorial
 
 A tutorial for flutter testing guided by YouTube videos of Flutter Explained.
 
 ## Videos
+
 - [Flutter Explained - Intro into Testing](https://youtu.be/AA4I10rG_x8)
-- [Flutter Explained - Unit Testing] - WIP
-- [Flutter Explained - Component Testing] - WIP
-- [Flutter Explained - Integration Testing] - WIP
-- [Flutter Explained - E2E Testing] - WIP
+- [Flutter Explained - Unit Testing](https://www.youtube.com/watch?v=C1kzJH8SiuE&)
+- [Flutter Explained - Widget Testing](https://www.youtube.com/watch?v=pgMI5nmAem0)
+- [Flutter Explained - Integration Testing](https://www.youtube.com/watch?v=WPEsnJgW99M&feature=youtu.be)
 
-## Articles
+## Follow the tutorial
 
-## Getting Started
-This project is a starting point for a Flutter application.
+You can follow the tutorial explained in the video if you check out the different "tutorial"
+branches. Every branch will contain several todos that will help you to follow along and help you
+writing your first tests.
 
-A few resources to get you started if this is your first Flutter project:
+### Tutorial Branches
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [Tutorial Unit Testing](https://github.com/md-weber/flutter_testing_tutorial/tree/unit_testing_tutorial)
+- [Tutorial Integration Testing]()
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Keep in Mind
+
+Unit Tests should be ...
+
+- easy to write and maintainable
+- should be readable
+- should be reliable
+- should be fast
+- should be independent

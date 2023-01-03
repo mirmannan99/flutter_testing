@@ -36,11 +36,11 @@ class _MoodScreenState extends State<MoodScreen> {
               itemCount: checkboxState.length,
               itemBuilder: (context, index) => CheckboxListTile(
                 value: checkboxState[index].value,
-                onChanged: (bool value) {
+                onChanged: (bool? value) {
                   setState(() {
                     checkboxState[index] = CheckboxState(
                       checkboxState[index].title,
-                      value,
+                      value!,
                     );
                   });
                 },

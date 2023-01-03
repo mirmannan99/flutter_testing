@@ -60,17 +60,15 @@ class _MyHomePageState extends State<MyHomePage> {
                           controller: emailController,
                           autovalidateMode: AutovalidateMode.onUserInteraction,
                           validator: (value) {
-                            return value.isNotEmpty
-                                ? null
-                                : "Email should not be empty";
+                            if (value == null || value.isNotEmpty) return null;
+                            return "Email should not be empty";
                           },
                         ),
                         SizedBox(height: 8),
                         TextFormField(
                           validator: (value) {
-                            return value.isNotEmpty
-                                ? null
-                                : "Password should not be empty";
+                            if (value == null || value.isNotEmpty) return null;
+                            return "Password should not be empty";
                           },
                           decoration: InputDecoration(hintText: "Password"),
                           controller: passwordController,
@@ -78,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           autovalidateMode: AutovalidateMode.onUserInteraction,
                         ),
                         SizedBox(height: 8),
-                        RaisedButton(
+                        ElevatedButton(
                           onPressed: () {
                             Navigator.push(
                               context,

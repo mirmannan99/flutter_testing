@@ -13,7 +13,7 @@ void main() {
 
       var emailField = find.byType(TextFormField).first;
       var passwordField = find.byType(TextFormField).last;
-      var loginButton = find.byType(RaisedButton).first;
+      var loginButton = find.byType(ElevatedButton).first;
 
       // Enter text for the email address
       await tester.enterText(emailField, 'flutterexp@gmail.com');

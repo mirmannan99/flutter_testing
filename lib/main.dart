@@ -3,11 +3,11 @@ import 'package:flutter_testing_tutorial/screens/my_home_page.dart';
 import 'package:honey/honey.dart';
 
 const kIsHoney = bool.fromEnvironment('HONEY');
+
 void main() {
   if (kIsHoney) {
     HoneyWidgetsBinding.ensureInitialized();
   }
-
   runApp(MyApp());
 }
 

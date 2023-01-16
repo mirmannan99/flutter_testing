@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_testing_tutorial/screens/mood_screen.dart';
 import 'package:flutter_testing_tutorial/util/time_helper.dart';

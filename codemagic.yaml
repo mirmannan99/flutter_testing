@@ -27,8 +27,10 @@ workflows:
         echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/android/local.properties"
       - flutter packages pub get
       # TODO: Add our build scripts for patrol (Android)
-      - ./android/gradlew :app:assembleDebug -Ptarget="$(pwd)/../integration_test/app_test.dart"
-      - ./android/gradlew :app:assembleDebugAndroidTest
+      - cd android
+      - ./gradlew :app:assembleDebug -Ptarget="$(pwd)/../integration_test/app_test.dart"
+      - ./gradlew :app:assembleDebugAndroidTest
+      - cd ..
       - name: Authorize access to Firebase Test Lab with a service account
         script: |
           set -e # exit on first failed command

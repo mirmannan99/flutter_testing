@@ -12,6 +12,7 @@ workflows:
       flutter: default
       xcode: latest
       cocoapods: default
+      java: default
     scripts:
       - |
         # set up debug keystore

@@ -31,6 +31,9 @@ workflows:
         echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/android/local.properties"
       - flutter packages pub get
       # TODO: Add our build scripts for patrol (Android)
+      - name: Setup the gradle wrapper
+        working_directory: android
+        script: gradle wrapper
       - name: Build Android APK for Patrol Test
         working_directory: android
         script: ./gradlew :app:assembleDebug -Ptarget="$(pwd)/../integration_test/app_test.dart"

@@ -21,7 +21,7 @@ void main() {
             appBar: AppBar(title: const Text('app')),
             backgroundColor: Colors.blue,
           ),
-        ),
+         ),
       );
 
       await $.native.pressHome();
